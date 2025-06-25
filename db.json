@@ -1,0 +1,46 @@
+{
+  "comparacoes": [
+    {
+      "id": "e0b9",
+      "titulo": "Eu devo ir pra ",
+      "data": "2025-06-25T03:51:36.353Z",
+      "opcoes": [
+        {
+          "nome": "Backend",
+          "pesoTotal": 3
+        },
+        {
+          "nome": "Frontend",
+          "pesoTotal": 3
+        }
+      ],
+      "analise": {
+        "vencedor": "Frontend",
+        "motivos": {
+          "Backend": "A opção Backend possui um peso total de 3, sendo crucial para a lógica e a estrutura de dados de um sistema. No entanto, pode ser menos visível para o usuário final, o que pode limitar a interação direta com o produto.",
+          "Frontend": "A opção Frontend também tem um peso total de 3, mas é essencial para a experiência do usuário e a interface visual, impactando diretamente a satisfação do cliente. Contudo, pode ser mais desafiador manter a consistência em diferentes dispositivos e navegadores."
+        }
+      }
+    },
+    {
+      "id": "0c8a",
+      "titulo": "Qual curso fazer?",
+      "data": "2025-06-25T04:34:49.210Z",
+      "opcoes": [
+        {
+          "nome": "Engenharia de software"
+        },
+        {
+          "nome": "Gastronomia"
+        }
+      ],
+      "analise": {
+        "vencedor": "Engenharia de software",
+        "motivos": {
+          "Engenharia de software": "A engenharia de software oferece uma ampla gama de oportunidades de carreira em um setor em constante crescimento, com alta demanda por profissionais qualificados. Além disso, a possibilidade de trabalhar remotamente e a flexibilidade de horários são atrativos. No entanto, pode ser desafiador devido à necessidade de atualização constante em tecnologias.",
+          "Gastronomia": "A gastronomia permite a expressão criativa e a possibilidade de trabalhar em ambientes dinâmicos, além de ser uma área que pode proporcionar satisfação pessoal ao criar experiências para os outros. Contudo, a concorrência é alta e a estabilidade financeira pode ser incerta, especialmente no início da carreira."
+        }
+      }
+    }
+  ]
+}
