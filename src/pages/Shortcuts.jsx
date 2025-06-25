@@ -2,9 +2,8 @@ import { Typography, Box, List, ListItem, ListItemText, Paper } from '@mui/mater
 
 const atalhos = [
   { tecla: 'Alt + N', descricao: 'Abrir o formulário para criar nova comparação' },
-  { tecla: 'Alt + 1', descricao: 'Selecionar a primeira comparação da lista' },
-  { tecla: 'Alt + 2', descricao: 'Selecionar a segunda comparação da lista' },
-  { tecla: 'Alt + 3', descricao: 'Selecionar a terceira comparação da lista' },
+  { tecla: 'Alt + H', descricao: 'Abrir o histórico' },
+  { tecla: 'Alt + L', descricao: 'Abrir a página de home' },
 ];
 
 export default function Shortcuts() {
@@ -14,7 +13,7 @@ export default function Shortcuts() {
         variant="h4"
         sx={{ fontWeight: 'bold', mb: 3, color: 'primary.main', userSelect: 'none' }}
       >
-        ⌨️ Atalhos de Teclado
+        Atalhos de Teclado
       </Typography>
 
       <Paper
