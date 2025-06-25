@@ -6,20 +6,16 @@ export default function KeyboardShortcuts() {
 
   useEffect(() => {
     function handleKeyDown(event) {
-      // Alt + N
       if (event.altKey && event.key.toLowerCase() === 'n') {
         event.preventDefault();
         navigate('/comparar');
       }
 
-      // Outros atalhos, exemplo:
-      // Alt + H -> Histórico
       if (event.altKey && event.key.toLowerCase() === 'h') {
         event.preventDefault();
         navigate('/historico');
       }
 
-      // Alt + L -> Login
       if (event.altKey && event.key.toLowerCase() === 'l') {
         event.preventDefault();
         navigate('/login');
