@@ -26,5 +26,5 @@ export default function KeyboardShortcuts() {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [navigate]);
 
-  return null; // Componente não renderiza nada visualmente
+  return null;
 }
