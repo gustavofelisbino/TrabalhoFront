@@ -56,21 +56,17 @@ export default function App() {
       <BrowserRouter>
         {user && <Navbar />}
 
-        {/* Atalhos globais */}
         <KeyboardShortcuts />
 
         <Suspense fallback={<div>Carregando...</div>}>
           <Routes>
-            {/* rota pública */}
             <Route path="/login" element={!user ? <LoginCadastro /> : <Navigate to="/" />} />
 
-            {/* rotas protegidas */}
             <Route path="/" element={user ? <Home /> : <Navigate to="/login" />} />
             <Route path="/comparar" element={user ? <Compare /> : <Navigate to="/login" />} />
             <Route path="/historico" element={user ? <History /> : <Navigate to="/login" />} />
             <Route path="/atalhos" element={user ? <Shortcuts /> : <Navigate to="/login" />} />
 
-            {/* fallback */}
             <Route path="*" element={<Navigate to={user ? "/" : "/login"} />} />
           </Routes>
         </Suspense>
