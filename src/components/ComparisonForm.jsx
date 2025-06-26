@@ -34,7 +34,6 @@ Sua resposta deve conter o nome exato das opções e explicações objetivas, co
   return prompt;
 }
 
-// Função para extrair JSON de uma string (tenta pegar só o JSON, mesmo que tenha texto extra)
 function extrairJsonDoTexto(texto) {
   try {
     const inicio = texto.indexOf('{');
@@ -136,7 +135,6 @@ export default function ComparisonForm({ onCreated, loading, setLoading }) {
         analise: respostaChat,
       };
 
-      // Salva no backend e espera retorno
       const saveRes = await api.post('/comparacoes', comparacaoCompleta);
 
       const savedData = saveRes.data;
