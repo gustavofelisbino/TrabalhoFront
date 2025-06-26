@@ -33,17 +33,15 @@ export default function Compare() {
         variant="h4"
         sx={{ fontWeight: 'bold', mb: 3, color: 'primary.main', userSelect: 'none' }}
       >
-        ✨ Comparações
+        Comparações
       </Typography>
 
-      {/* Formulário SEM esconder */}
       <ComparisonForm
         onCreated={handleNova}
         loading={loadingResumo}
         setLoading={setLoadingResumo}
       />
 
-      {/* Listagem da esquerda */}
       {comparacoes.map((comp, index) => (
         <Box
           key={comp.id || comp.data || index}
@@ -58,15 +56,14 @@ export default function Compare() {
             '&:hover': { backgroundColor: 'primary.lighter' },
           }}
           onClick={() => setSelecionada(comp)}
-          tabIndex={0} // para acessibilidade por teclado
+          tabIndex={0}
         >
           <Typography variant="h6" sx={{ color: 'text.primary' }}>
-            📝 {comp.titulo}
+            {comp.titulo}
           </Typography>
         </Box>
       ))}
 
-      {/* Detalhes da comparação selecionada */}
       {selecionada && (
         <Box sx={{ mt: 4 }}>
           <Typography variant="h5" sx={{ mb: 2, color: 'primary.dark' }}>
