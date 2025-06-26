@@ -51,7 +51,7 @@ export default function Home() {
         }}
       >
         <Typography variant="h3" component="h1" sx={{ fontWeight: 'bold', mb: 2, color: '#7B2CBF' }}>
-          🧠 Bem-vindo ao Decisão+
+          Bem-vindo ao Decisão+
         </Typography>
 
         <Typography variant="h6" sx={{ mb: 4, color: 'text.secondary' }}>
@@ -74,7 +74,7 @@ export default function Home() {
             boxShadow: 3,
           }}
         >
-          Começar Comparação 🚀
+          Começar Comparação
         </Button>
       </Paper>
 
