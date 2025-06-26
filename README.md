@@ -138,6 +138,8 @@ Com JSON no corpo contendo a comparação completa com análise.
 
 ## Autor
 Gustavo Felisbino - https://github.com/gustavofelisbino
+Lucas Gaspar
+Guilherme Brognoli
 
 ## Créditos
 - Logo e design inspirado por Material UI
